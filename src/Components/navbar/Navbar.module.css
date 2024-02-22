@@ -1,0 +1,20 @@
+
+.header {
+    display: flex;
+}
+
+.nav {
+    background-color: #121212;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    height: 15.5vh;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+    filter: brightness(100);
+}

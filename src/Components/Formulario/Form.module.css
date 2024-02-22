@@ -1,0 +1,190 @@
+.container_login {
+    background: rgb(42, 42, 42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa_login {
+    width: 55vw;
+    height: 100vh;
+    border: 10px solid #121212;
+    background-color: #121212;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixa_login h1 {
+    text-align: center;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+.risco {
+    width: 400px;
+    height: 2px;
+    background-color: #292929;
+    margin: 30px 0px;
+}
+
+.caixa_login div {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.caixa_login div label {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    font-family: Helvetica;
+    margin-top: 20px;
+
+}
+
+.caixa_login div input {
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    padding: 15px;
+    width: 20vw;
+    outline-color: white;
+    margin-top: 10px;
+    color: white;
+}
+.caixa_login div input::placeholder {
+    font-size: 1.2em;
+}
+
+.caixa_login div input:hover {
+    border: 1px solid white;
+}
+.radio {
+    width: 20vw;
+    display: flex;
+}
+.radio h1{
+   font-size: 1em;
+   font-family: verdana;
+   font-weight: 500;
+   margin-left: 10px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.botao button{
+    background-color: #1ED760;
+    
+    width: 20vw;
+    height: 7vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.botao:hover{
+    scale: 106%;
+}
+/*botao copiado do site uiverse.io*/
+.switch {
+ --button-width: 2.5em;
+ --button-height: 1.2em;
+ --toggle-diameter: 1em;
+ --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+ --toggle-shadow-offset: 10px;
+ --toggle-wider: 3em;
+ --color-grey: #cccccc;
+ --color-green: #1ED760;
+ display: flex;
+}
+
+.slider {
+ display: inline-block;
+ width: var(--button-width);
+ height: var(--button-height);
+ background-color: var(--color-grey);
+ border-radius: calc(var(--button-height) / 2);
+ position: relative;
+ transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+ content: "";
+ display: inline-block;
+ width: var(--toggle-diameter);
+ height: var(--toggle-diameter);
+ background-color: #121212;
+ border-radius: calc(var(--toggle-diameter) / 2);
+ position: absolute;
+ top: var(--button-toggle-offset);
+ transform: translateX(var(--button-toggle-offset));
+ box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+ background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+ box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+ display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+ width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+.forget{
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+
+}
+.forget:hover{
+    color: #1ED760;
+}
+.criar_conta{
+    font-family: verdana;
+    text-align: center;
+    color: #A7A7A7;
+}
+.criar_conta_link{
+    font-family: verdana;
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.criar_conta_link:hover{
+    color: #1ED760;
+}

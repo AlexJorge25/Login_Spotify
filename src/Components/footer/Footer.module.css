@@ -1,0 +1,16 @@
+.footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    font-size: 0.7em;
+    color: #A7A7A7;
+    font-family: verdana;
+}
+.texto span{
+    text-decoration: underline;
+}
