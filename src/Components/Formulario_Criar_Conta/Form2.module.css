@@ -1,0 +1,128 @@
+.container_login {
+    background: rgb(42, 42, 42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa_login {
+    width: 55vw;
+    height: 100vh;
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixa_login h1 {
+    text-align: center;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+.risco {
+    width: 400px;
+    height: 2px;
+    background-color: #292929;
+    margin: 30px 0px;
+}
+
+.caixa_login div {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.caixa_login div label {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    font-family: Helvetica;
+    margin-top: 20px;
+
+}
+
+.caixa_login div input {
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    padding: 15px;
+    width: 20vw;
+    outline-color: white;
+    margin-top: 10px;
+    color: white;
+}
+.caixa_login div input::placeholder {
+    font-size: 1.2em;
+}
+
+.caixa_login div input:hover {
+    border: 1px solid white;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.botao button{
+    background-color: #1ED760;
+    
+    width: 20vw;
+    height: 7vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.botao:hover{
+    scale: 106%;
+}
+a{
+    margin: 30px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+
+}
+a:hover{
+    color: #1ED760;
+}
+.logar{
+    font-family: verdana;
+    text-align: center;
+    color: #A7A7A7;
+    font-size: 1em;
+}
+.logar span{
+    text-decoration: none;
+
+}
+.logar span a{
+    font-family: verdana;
+    margin-left: 10px;
+}
+p{
+    margin: 20px;
+    font-size: 0.8em;
+    color: #A7A7A7;
+    font-family: verdana;
+}
+p span{
+    text-decoration: underline;
+}
