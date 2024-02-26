@@ -19,7 +19,6 @@
 @media only screen and (max-width: 600px) {
     .header {
         display: flex;
-        margin: 5px;
     }
     
     .header nav {
@@ -29,6 +28,7 @@
         align-items: flex-start;
         width: 100vw;
         height: 14vh;
+        padding: 5px;
     }
     
     .header nav img {
