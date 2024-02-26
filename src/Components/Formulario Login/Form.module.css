@@ -188,3 +188,98 @@
 .criar_conta_link:hover{
     color: #1ED760;
 }
+
+@media only screen and (max-width: 600px) {
+    .container_login {
+    width: 100vw;
+    height: 90vh;
+    
+}
+
+.caixa_login {
+    width: 80vw;
+    height: auto;
+}
+
+
+.caixa_login div input {
+    width: 60vw;
+}
+
+.radio {
+    width: 60vw;
+    display: flex;
+    
+}
+.radio h1{
+    font-size: 1.3em;
+    font-family: verdana;
+    font-weight: 500;
+    margin: 0px 10px;
+    
+}
+
+.botao button{
+    width: 55vw;
+    height: 7vh;
+}
+
+.criar_conta_link{
+    display: block;
+}
+
+
+  }
+  
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container_login {
+        width: 100vw;
+        height: 80vh;
+        
+    }
+    
+    .caixa_login {
+        width: 70vw;
+        height: 60vh;
+    }
+    
+    
+    .caixa_login div input {
+        width: 40vw;
+    }
+    .caixa_login div label {
+        font-size: 1.2em;
+    }
+    .radio {
+        width: 40vw;
+        display: flex;
+        
+    }
+    .radio h1{
+        font-size: 1.3em;
+        font-family: verdana;
+        font-weight: 500;
+        margin: 0px 10px;
+        
+    }
+    
+    .botao button{
+        width: 40vw;
+        height: 6vh;
+    }
+    .criar_conta{
+        font-size: 1.5em;
+    }
+    .criar_conta_link{
+        display: block;
+}
+    
+    
+  }
+  
+ 
+  @media only screen and (min-width: 1025px) {
+   
+  }
+  

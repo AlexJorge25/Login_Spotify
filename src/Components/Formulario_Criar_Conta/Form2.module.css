@@ -63,6 +63,7 @@
     margin-top: 10px;
     color: white;
 }
+
 .caixa_login div input::placeholder {
     font-size: 1.2em;
 }
@@ -71,15 +72,16 @@
     border: 1px solid white;
 }
 
-.botao{
+.botao {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
-.botao button{
+
+.botao button {
     background-color: #1ED760;
-    
+
     width: 20vw;
     height: 7vh;
     border: none;
@@ -87,10 +89,12 @@
     font-size: 1em;
     font-weight: bold;
 }
-.botao:hover{
+
+.botao:hover {
     scale: 106%;
 }
-a{
+
+a {
     margin: 30px;
     font-size: 1em;
     font-weight: 500;
@@ -100,29 +104,110 @@ a{
     text-decoration: underline;
 
 }
-a:hover{
+
+a:hover {
     color: #1ED760;
 }
-.logar{
+
+.logar {
     font-family: verdana;
     text-align: center;
     color: #A7A7A7;
     font-size: 1em;
 }
-.logar span{
+
+.logar span {
     text-decoration: none;
 
 }
-.logar span a{
+
+.logar span a {
     font-family: verdana;
     margin-left: 10px;
 }
-p{
+
+p {
     margin: 20px;
     font-size: 0.8em;
     color: #A7A7A7;
     font-family: verdana;
 }
-p span{
+
+p span {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .caixa_login div input {
+        width: 50vw;
+    }
+
+    .botao button {
+        width: 50vw;
+    }
+
+    a {
+        display: block;
+        margin: 10px;
+    }
+
+    .logar {
+        font-family: verdana;
+        text-align: center;
+        color: #A7A7A7;
+        font-size: 1em;
+    }
+
+    p {
+        margin: 25px 0px;
+        font-size: 0.8em;
+        color: #A7A7A7;
+        font-family: verdana;
+        text-align: center;
+    }
+
+    p span {
+        text-decoration: underline;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .caixa_login div input {
+        width: 40vw;
+    }
+
+    .botao button {
+        width: 40vw;
+        height: 6vh;
+    }
+
+    a {
+        display: block;
+        margin: 10px;
+    }
+
+    .logar {
+        font-family: verdana;
+        text-align: center;
+        color: #A7A7A7;
+        font-size: 1.5em;
+    }
+
+    p {
+        margin: 25px 0px;
+        font-size: 1.2em;
+        color: #A7A7A7;
+        font-family: verdana;
+        text-align: center;
+    }
+
+    p span {
+        text-decoration: underline;
+    }
+
+
+
 }

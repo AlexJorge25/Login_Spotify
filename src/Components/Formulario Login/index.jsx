@@ -10,7 +10,7 @@ function Form() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
-    // Funções de tratamento de mudança nos campos de email e senha
+    
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
     };
@@ -19,18 +19,33 @@ function Form() {
         setSenha(event.target.value);
     };
     
-    // Função para lidar com o envio do formulário
+    
     const handleSubmit = (event) => {
         event.preventDefault();
+        if (!email.trim() || !senha.trim()) {
+            
+            toast.error('Email ou Senha não pode estar vazios!');
+            return;
+        }
+        if (!ValidarEmail(email)) {
+           
+            toast.error('Email invalido!');
+            return;
+        }
+        if (!ValidarSenha(senha)) {
+            
+            toast.error('Senha tem que ser acima de 6 caracteres');
+            return;
+        }
         if (ValidarEmail(email) && ValidarSenha(senha)) {
             let contas = JSON.parse(localStorage.getItem('contas'));
 
-            if(contas.find(contas => contas.email === email && contas.senha === senha)){
+            if (!contas) {
+                toast.error('Conta não cadastrada!');
+            } else if (contas.find(conta => conta.email === email && conta.senha === senha)) {
                 toast.success('Logado!👋');
-            }
-            else{
-                toast.error('Usuario não encontrado!👋');
-
+            } else {
+                toast.error('Usuário não encontrado!👋');
             }
 
         }
@@ -46,12 +61,12 @@ function Form() {
                     <h1>Log in to Spotify</h1>
                     <div className={styles.risco}></div> 
                     <div>
-                        <label htmlFor="emailUsername">Email or username</label>
-                        <input type="email" value={email}placeholder="Email or username" onChange={handleEmailChange}/>
+                        <label htmlFor="Email or username">Email or username</label>
+                        <input type="email" id="Email or username" value={email}placeholder="Email or username" onChange={handleEmailChange}/>
                     </div>
                     <div>
-                        <label htmlFor="password">Password</label>
-                        <input type="password" value={senha} placeholder="Password" className={styles.botao_senha} onChange={handleSenhaChange}/> 
+                        <label htmlFor="Password">Password</label>
+                        <input type="password" id="Password" value={senha} placeholder="Password" className={styles.botao_senha} onChange={handleSenhaChange}/> 
                     </div>
                     <div className={styles.radio}> 
                         <label className={styles.switch}> 

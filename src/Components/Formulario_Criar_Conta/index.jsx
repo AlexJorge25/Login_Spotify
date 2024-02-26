@@ -9,7 +9,7 @@ function Form2() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
-    // Funções de tratamento de mudança nos campos de email e senha
+    
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
     };
@@ -18,9 +18,24 @@ function Form2() {
         setSenha(event.target.value);
     };
 
-    // Função para lidar com o envio do formulário
+    
     const handleSubmit = (event) => {
         event.preventDefault();
+        if (!email.trim() || !senha.trim()) {
+            
+            toast.error('Email ou Senha não pode estar vazios!');
+            return;
+        }
+        if (!ValidarEmail(email)) {
+           
+            toast.error('Email invalido!');
+            return;
+        }
+        if (!ValidarSenha(senha)) {
+            
+            toast.error('Senha tem que ser acima de 6 caracteres');
+            return;
+        }
         if (ValidarEmail(email) && ValidarSenha(senha)) {
             let contas = JSON.parse(localStorage.getItem('contas')) || [];
 
@@ -46,11 +61,11 @@ function Form2() {
                     <div className={styles.risco}></div>
                     <div>
                         <label htmlFor="Email or username">Email or username</label>
-                        <input type="email" value={email} placeholder="Email or username" onChange={handleEmailChange} />
+                        <input type="email" id="Email or username" value={email} placeholder="Email or username" onChange={handleEmailChange} />
                     </div>
                     <div>
                         <label htmlFor="Password">Password</label>
-                        <input type="password" value={senha} placeholder="Password" className="botao-senha" onChange={handleSenhaChange} />
+                        <input type="password" id="Password" value={senha} placeholder="Password" className="botao-senha" onChange={handleSenhaChange} />
                     </div>
 
                     <div className={styles.botao}>

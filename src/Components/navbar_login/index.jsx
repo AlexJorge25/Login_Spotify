@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.module.css'; // Importa o módulo CSS como um objeto
+import styles from './Navbar.module.css'; 
 import spotifyLogo from '../../assets/img/spotify-logo.png';
 
 function Navbar(){

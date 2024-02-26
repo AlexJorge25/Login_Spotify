@@ -15,3 +15,52 @@
     margin: 50px 50px 0px 50px;
     filter: brightness(100);
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+    }
+    
+    .header nav {
+        background-color: rgb(42, 42, 42);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .header nav img {
+        width: 150px;
+        height: auto;
+        filter: brightness(100);
+    }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+   
+    .header {
+        display: flex;
+    }
+    
+    .header nav {
+        background-color: rgb(42, 42, 42);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        height: 12vh;
+    }
+    
+    .header nav img {
+        width: 200px;
+        height: auto;
+        filter: brightness(100);
+    }
+
+}
+@media only screen and (min-width: 1025px) {
+   
+}
